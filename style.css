@@ -182,15 +182,18 @@
       font-size: var(--font-small);
   }
 
+  .about__jobs {
+      padding-left: 40%;
+  }
   .job {
       display: flex;
       align-items: center;
       
   }
 
-  .job__dscription {
+  .job__description {
       margin: 0 16px;
-      text_align: left;
+      text-align: left;
   }
 
   .job__name, 
