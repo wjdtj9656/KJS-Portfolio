@@ -20,9 +20,15 @@ navbarMenu.addEventListener('click', (event) => {
     if(link == null){
         return;
     }
+    navbarMenu.classList.remove('open');
     scrollIntoView(link);
-});
 
+});
+//Navbar toggle button for small screen
+const navbarToggleBtn = document.querySelector('.navbar__toggle-btn');
+navbarToggleBtn.addEventListener('click', () => {
+    navbarMenu.classList.toggle('open');
+});
 //Handle Scrolling when tapping contactMe
 const contactMe = document.querySelector('.home__contact');
 console.log(contactMe);
@@ -36,7 +42,26 @@ const homeHeight = home.getBoundingClientRect().height;
 document.addEventListener('scroll', () => {
     home.style.opacity = (1 - window.scrollY / homeHeight);
 });
+
+//show Arrow UP button when scrolling down
+const arrowUp = document.querySelector('.arrow-up');
+document.addEventListener('scroll', () => {
+    if(window.scrollY > homeHeight /2){
+        arrowUp.classList.add('visible');
+    } else{
+        arrowUp.classList.remove('visible');
+    }
+});
+
+//Handle click on the arrow-up button
+arrowUp.addEventListener('click', () => {
+    scrollIntoView('#home');
+});
+
+
+
 function scrollIntoView(selector) {
     const scrollTo = document.querySelector(selector);
     scrollTo.scrollIntoView({behavior: 'smooth'});
 }
+
