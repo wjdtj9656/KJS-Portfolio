@@ -33,7 +33,10 @@
     /* Animation */
     --animation-duration: 300ms;
   }
-  
+  /* Universal tags */
+  * {
+    box-sizing: border-box;
+  }
   body {
     margin: 0;
     font-family: 'Open Sans', sans-serif;
@@ -168,7 +171,6 @@
   .section__container {
     max-width: 1200px;
     margin: auto;
-    text-align: center;
   }
   /* About */
   .about__majors {
