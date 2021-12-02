@@ -98,6 +98,7 @@
       padding: 16px;
       transition: all var(--animation-duration) ease-in-out;
       box-sizing: border-box;
+      z-index: 100;
   }
   #navbar.navbar--dark {
     background-color: var(--color-purple);
@@ -314,6 +315,7 @@
   .work__projects {
     display:flex;
     flex-direction: wrap;
+    z-index: -1;
   }
   .project {
     position: relative;
