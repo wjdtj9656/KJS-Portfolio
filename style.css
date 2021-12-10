@@ -414,9 +414,8 @@
    }
    #navbar {
      flex-direction: column;
-     height: 13%;
+     height: 50px;
      align-items: flex-start;
-     background-color: var(--color-purple);
    }
    .navbar__menu {
      flex-direction: column;
