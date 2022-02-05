@@ -315,6 +315,7 @@
   .work__projects {
     display:flex;
     flex-direction: wrap;
+    justify-content: center;
     z-index: -1;
   }
   .project {
