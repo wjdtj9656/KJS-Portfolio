@@ -314,14 +314,26 @@
   }
   .work__projects {
     display:flex;
-    flex-direction: wrap;
+    flex-direction: column;
     justify-content: center;
     z-index: -1;
+  }
+  .work__project {
+    display:flex;
+    justify-content: center;
+    margin: 0px 50px;
+  }
+  .project__description2 {
+    display: inline-block;
+    text-align: left;
+    width: 500px;
+    height: 400px;
+    margin-left:30px;
   }
   .project {
     position: relative;
     width: 280px;
-    height: 250px;
+    height: 300px;
     margin: 2px;
     background-color: var(--color-light-white);
     dispLay: flex;
